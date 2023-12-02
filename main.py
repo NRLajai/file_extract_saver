@@ -69,7 +69,12 @@ class Handler:
     
 
     async def homepage(self, request: Request):
-        return self.templates.TemplateResponse("upload_page.html", {"request": request})
+        content = {
+            "request": request,
+            "title": "File Upload",
+            "choice": "Choose a File:"
+            }
+        return self.templates.TemplateResponse("upload_page.html", content)
     
 
     async def create_upload_file(self, uploaded_file: UploadFile = File(...)):
