@@ -2,6 +2,7 @@
 ## Code to upload a csv file and extract and save data in sqlite
 
 git clone git@github.com:NRLajai/file_extract_saver.git <br>
+cd file_extract_saver <br>
 git switch master <br>
 pipenv install <br>
 pipenv shell <br>
