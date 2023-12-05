@@ -10,6 +10,8 @@ uvicorn main:handler.app --reload <br> <br>
 
 Once all done, you can access endpoint through localhost:8000 <br>
 
-Here i have created two endpoints
-  1. one is /users/{id} - to read inserted users
-  2. second is /uploadfile  - to upload a csv file
+Here i have created three endpoints
+  1.  first is / (at root path), you can access in browser with http://localhost:8000 - used to upload file
+  2. YOU DONT HAVE TO ACCESS IT DIRECTLY, /uploadfile [POST method]- Once file uploaded in / (root path), its do further process
+  3. third is /users/{id} - to read inserted user.
+  
